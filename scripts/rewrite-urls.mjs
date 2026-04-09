@@ -190,14 +190,13 @@ async function rewriteHtmlFile(filepath, isHomepage, isNested) {
   // For homepage only: inject SPA router disabler
   if (isHomepage) {
     html = html.replace(RUNTIME_INTERCEPTOR, RUNTIME_INTERCEPTOR + '\n' + SPA_ROUTER_DISABLER);
-  } else {
-    // For sub-pages: remove ALL <script> tags (they're static HTML+CSS, no JS needed)
-    // EXCEPT our injected scripts
-    html = html.replace(/<script(?![^>]*id="(url-interceptor|spa-router-disabler|clone-fixes)")[^>]*>[\s\S]*?<\/script>/gi, '');
   }
+  // Sub-pages: keep ALL scripts intact — they need the animator engine and
+  // framer/appear data for entrance animations. Removing them kills interactivity.
 
-  // Remove #__framer-badge-container element entirely
-  html = html.replace(/<div[^>]*id="__framer-badge-container"[^>]*>[\s\S]*?<\/div>/gi, '');
+  // DO NOT delete #__framer-badge-container from HTML — React calls createRoot() on it.
+  // Deleting it causes React error #299 which crashes the entire hydration process.
+  // It's already hidden via CSS in INJECT_CSS above.
 
   await writeFile(filepath, html, 'utf-8');
   console.log(`  Rewritten: ${filename} (${isHomepage ? 'homepage' : isNested ? 'nested' : 'root'})`);

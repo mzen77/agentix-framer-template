@@ -14,7 +14,3 @@
 # Legal pages
 /legal/privacy-policy   /legal/privacy-policy.html   200
 /legal/cookie-policy    /legal/cookie-policy.html    200
-
-# Anchor links on homepage
-/#core-value     /index.html    200
-/#integrations   /index.html    200

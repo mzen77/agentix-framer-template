@@ -4,7 +4,7 @@
 - **URL**: https://agent.framer.wiki/
 - **Framework**: Framer 5b26096
 - **Build strategy**: Runtime Preservation (Framer JS engine preserved intact)
-- **Live deploy URL**: (TBD — filled after Phase 6 deploy)
+- **Live deploy URL**: https://agentix-framer-template.netlify.app/
 
 ## Tech Stack
 - Static HTML + Framer JS runtime (no build step)
