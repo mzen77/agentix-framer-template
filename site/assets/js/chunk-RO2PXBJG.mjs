@@ -1,0 +1,2 @@
+function t(a,e){return{description:"Agentix is a modern, responsive Framer template built for SaaS, AI tools, and startups. With clean design, smart interactions, and CMS-ready sections, it\u2019s perfect for fast launches and high-converting product sites.",favicon:"/assets/fonts/jODyg5107cBRtNMvEe3bfgZxgc.svg",robots:"max-image-preview:large",socialImage:"/assets/fonts/5jUwhi6XYrX1nKV1ssFTNOPk0.png",title:"Agentix | Framer Template for AI, SaaS, B2B startups"}}export{t as a};
+//# sourceMappingURL=chunk-RO2PXBJG.mjs.map

@@ -1,0 +1,20 @@
+# Clean URL routing for static Framer clone
+/pricing    /pricing.html    200
+/contact    /contact.html    200
+/blog       /blog.html       200
+/changelog  /changelog.html  200
+/waitlist   /waitlist.html   200
+/404        /404.html        200
+
+# Blog detail pages
+/blog/building-smarter-workflows-with-ai-agents   /blog/building-smarter-workflows-with-ai-agents.html   200
+/blog/why-multi-agent-systems-are-the-future       /blog/why-multi-agent-systems-are-the-future.html       200
+/blog/how-to-automate-tasks-in-under-5-minutes     /blog/how-to-automate-tasks-in-under-5-minutes.html     200
+
+# Legal pages
+/legal/privacy-policy   /legal/privacy-policy.html   200
+/legal/cookie-policy    /legal/cookie-policy.html    200
+
+# Anchor links on homepage
+/#core-value     /index.html    200
+/#integrations   /index.html    200

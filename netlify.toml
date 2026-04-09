@@ -1,0 +1,4 @@
+[build]
+  publish = "site"
+
+# Do NOT add a catch-all /* redirect — it breaks static asset serving
